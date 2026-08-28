@@ -1,5 +1,5 @@
 {
-  "name": "clawvision",
+  "name": "@forest-stack-lang/clawvision",
   "version": "0.1.0",
   "description": "Live video awareness for OpenClaw. Streams camera frames to any OpenAI-compatible vision model, evaluates them against a rolling question, and notifies the agent when something happens.",
   "type": "module",
@@ -37,6 +37,26 @@
   "openclaw": {
     "extensions": [
       "./dist/index.js"
-    ]
+    ],
+    "compat": {
+      "pluginApi": ">=2026.5.17"
+    },
+    "install": {
+      "clawhubSpec": "@forest-stack-lang/clawvision",
+      "npmSpec": "@forest-stack-lang/clawvision",
+      "defaultChoice": "clawhub",
+      "minHostVersion": "2026.5.17"
+    },
+    "build": {
+      "openclawVersion": "2026.7.1-2"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forest-stack-lang/clawvision.git"
+  },
+  "homepage": "https://github.com/Forest-stack-lang/clawvision",
+  "bugs": {
+    "url": "https://github.com/Forest-stack-lang/clawvision/issues"
   }
 }
