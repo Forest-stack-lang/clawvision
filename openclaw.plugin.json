@@ -1,0 +1,159 @@
+{
+  "id": "clawvision",
+  "name": "ClawVision",
+  "description": "Live video awareness for OpenClaw.",
+  "version": "0.1.0",
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "clawvision_start",
+      "clawvision_brief",
+      "clawvision_status",
+      "clawvision_stop",
+      "clawvision_streams"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "endpoint",
+      "model"
+    ],
+    "properties": {
+      "endpoint": {
+        "type": "string"
+      },
+      "apiKey": {
+        "type": "string"
+      },
+      "model": {
+        "type": "string"
+      },
+      "narratorModel": {
+        "type": "string"
+      },
+      "extraBody": {
+        "type": "object"
+      },
+      "requestTimeoutMs": {
+        "type": "number"
+      },
+      "bufferSeconds": {
+        "type": "number"
+      },
+      "packetSeconds": {
+        "type": "number"
+      },
+      "framesPerPacket": {
+        "type": "number"
+      },
+      "minFrameIntervalMs": {
+        "type": "number"
+      },
+      "maxTicksPerSecond": {
+        "type": "number"
+      },
+      "cooldownSeconds": {
+        "type": "number"
+      },
+      "narrationIntervalSeconds": {
+        "type": "number"
+      },
+      "clipBeforeSeconds": {
+        "type": "number"
+      },
+      "clipAfterSeconds": {
+        "type": "number"
+      },
+      "clipDir": {
+        "type": "string"
+      },
+      "ingestToken": {
+        "type": "string"
+      },
+      "agentId": {
+        "type": "string"
+      },
+      "openclawBin": {
+        "type": "string"
+      },
+      "openclawHome": {
+        "type": "string"
+      },
+      "autoStart": {
+        "type": "boolean"
+      },
+      "autoStartStream": {
+        "type": "string"
+      },
+      "defaultContext": {
+        "type": "string"
+      },
+      "defaultQuestion": {
+        "type": "string"
+      },
+      "feedIdleSeconds": {
+        "type": "number"
+      },
+      "notifyOnFeedOnline": {
+        "type": "boolean"
+      },
+      "contextFrames": {
+        "type": "number"
+      },
+      "contextFrameSpacingSeconds": {
+        "type": "number"
+      },
+      "compactNarrationEverySeconds": {
+        "type": "number"
+      },
+      "keepNarrationEntries": {
+        "type": "number"
+      },
+      "maxConcurrentEvaluations": {
+        "type": "number"
+      },
+      "maxConcurrentNarrations": {
+        "type": "number"
+      },
+      "clipRetentionMinutes": {
+        "type": "number"
+      }
+    }
+  },
+  "toolMetadata": {
+    "clawvision_start": {
+      "profiles": [
+        "coding",
+        "messaging"
+      ]
+    },
+    "clawvision_brief": {
+      "profiles": [
+        "coding",
+        "messaging"
+      ]
+    },
+    "clawvision_status": {
+      "profiles": [
+        "coding",
+        "messaging"
+      ]
+    },
+    "clawvision_stop": {
+      "profiles": [
+        "coding",
+        "messaging"
+      ]
+    },
+    "clawvision_streams": {
+      "profiles": [
+        "coding",
+        "messaging"
+      ]
+    }
+  }
+}

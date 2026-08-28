@@ -1,0 +1,5 @@
+node_modules/
+dist/
+*.bak
+*.bak[0-9]
+src/*.bak*
